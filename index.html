@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-************"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <header>
+      <nav class="sidebar-nav">
+        <div class="actions-container">
+          <div
+            class="audio"
+            data-element="audio-container"
+            data-container=".audio-container"
+          >
+            <i class="fas fa-headphones"></i>
+            <h1>AUDIO</h1>
+          </div>
+
+          <div
+            class="video"
+            data-element="video-container"
+            data-container=".video-container"
+          >
+            <i class="fas fa-video"></i>
+            <h1>VÍDEO</h1>
+          </div>
+
+          <div
+            class="image"
+            data-element="image-container"
+            data-container=".image-container"
+          >
+            <i class="fas fa-image"></i>
+            <h1>IMÁGEN</h1>
+          </div>
+        </div>
+
+        <div class="links-container">
+          <div class="information">
+            <a
+              href="#"
+              target="_blank"
+              data-element="info-container"
+              data-container=".info-container"
+              ><i class="fa-solid fa-circle-info"></i>
+            </a>
+          </div>
+          <div class="contact">
+            <a href="#" data-element="form" data-container=".form"
+              ><i class="fas fa-envelope"></i>
+            </a>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="welcome-container visible">
+          <div class="tittle-container">
+            <h1 class="superbig">DESCUBRE MULTIMÉDIA EN EL FRONTEND</h1>
+            <div class="media-types">
+              <div
+                class="media-tittle media-tittle-audio"
+                data-element="audio-container"
+                data-container=".audio-container"
+              >
+                <h1>AUDIO</h1>
+              </div>
+              <div
+                class="media-tittle media-tittle-video"
+                data-element="video-container"
+                data-container=".video-container"
+              >
+                <h1>VÍDEO</h1>
+              </div>
+              <div
+                class="media-tittle media-tittle-img"
+                data-element="image-container"
+                data-container=".image-container"
+              >
+                <h1>IMÁGENES</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="audio-container">
+          <div class="audio-visual-container">
+            <div class="audio-visual-flex">
+              <div class="audio-title">
+                <h1>The Pina Colada Song</h1>
+              </div>
+              <audio>
+                <source
+                  src="Multimedia/The_Pina_Colada_Song.mp3"
+                  type="audio/mpeg"
+                />
+              </audio>
+              <i class="fa-solid fa-music"></i>
+            </div>
+          </div>
+          <div class="audio-length-bar">
+            <div class="audio-length-tracker"></div>
+          </div>
+          <div class="audio-controls-container">
+            <div class="state-controls">
+              <button class="backward">
+                <i class="fa-solid fa-backward"></i>
+              </button>
+              <button class="play-btn">
+                <i class="fa-solid fa-play"></i>
+              </button>
+              <button class="forward">
+                <i class="fa-solid fa-forward"></i>
+              </button>
+            </div>
+            <div class="audio-timer-container">
+              <p class="audio-timer">1:00/3:23</p>
+            </div>
+            <div class="volume-controls">
+              <button class="volume-down-btn">
+                <i class="fas fa-volume-down"></i>
+              </button>
+              <button class="volume-up-btn">
+                <i class="fas fa-volume-up"></i>
+              </button>
+            </div>
+            <div class="end-state-controls">
+              <button class="repeat-btn">
+                <i class="fa-solid fa-repeat"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="video-container">
+          <video controls>
+            <source src="Multimedia/Dubai.mp4" type="video/mp4" />
+          </video>
+        </div>
+
+        <i class="fa-solid fa-arrow-right carousel-button inactive"></i>
+
+        <div class="image-container">
+          <div class="carousel-images">
+            <div class="img-titles">
+              <div class="img-title active">
+                <h2>PNG</h2>
+                <button class="img-info-btn">
+                  <i class="fa-solid fa-plus"></i>
+                </button>
+              </div>
+              <div class="img-info inactive">
+                <h3>PNG</h3>
+                <p>Transparencia: Si</p>
+                <p>Densidad de color: 24-bit</p>
+                <p>Compresión: Sin pérdida</p>
+              </div>
+              <div class="img-title inactive">
+                <h2>SVG</h2>
+                <button class="img-info-btn">
+                  <i class="fa-solid fa-plus"></i>
+                </button>
+              </div>
+              <div class="img-info inactive">
+                <h3>SVG</h3>
+                <p>Transparencia: Si</p>
+                <p>Densidad de color: 24-bit</p>
+                <p>Compresión: Sin pérdida</p>
+              </div>
+              <div class="img-title inactive">
+                <h2>JPG</h2>
+                <button class="img-info-btn">
+                  <i class="fa-solid fa-plus"></i>
+                </button>
+              </div>
+              <div class="img-info inactive">
+                <h3>JPG</h3>
+                <p>Transparencia: No</p>
+                <p>Densidad de color: 24-bit</p>
+                <p>Compresión: Con pérdida</p>
+              </div>
+            </div>
+            <img
+              src="Multimedia/meme_improvise_aadapt.png"
+              alt="Image"
+              id="image1"
+              class="active"
+            />
+
+            <img
+              src="Multimedia/Dinosaur Wordart.svg"
+              alt="dinosaurio"
+              id="image2"
+              class="inactive"
+            />
+
+            <img
+              src="Multimedia/paisa.jpg"
+              alt="paisaje"
+              id="paisaje"
+              class="inactive"
+            />
+          </div>
+        </div>
+
+        <div class="form">
+          <h2>¿Que te ha parecido?</h2>
+          <form>
+            <label for="name"><h3>Nombre:</h3></label>
+            <input type="text" id="name" name="name" />
+            <label for="email"><h3>Email:</h3></label>
+            <input type="email" id="email" name="email" />
+            <label for="message"><h3>Mensaje:</h3></label>
+            <textarea id="message" name="message"></textarea>
+            <button type="submit" id="send">Enviar</button>
+          </form>
+        </div>
+
+        <div class="info-container">
+          <h1>Proyecto Sergi Formatjer</h1>
+          <div class="text-information-container">
+            <h2 style="color: #d333cb;">Vídeo:</h2>
+            <p>
+              Se ha usado uno de los vídeos utilizado para crear la actividad X,
+              ya que e vídeo original era mayor a 150MB y daba muchos conflictos
+              con la subida en Github.
+              <a href="https://github.com/marcetpx/Sergi/tree/main/m9_diseny_interfaces/UF2Ac1">Enlace</a>
+            </p>
+            <h2 style="color: #ff5500;">Audio:</h2>
+            <p>Con la canción <a href="https://www.youtube.com/watch?v=TazHNpt6OTo">"The Piña Colada Song"</a>, tiene las mismas funcionalidades que puede dar el tag <b>"AUDIO CONTROLS"</b>, Play/Pause, seleccionar minutaje, volumen y avanzar/atrasar el audio.  </audio></p>
+          
+            <h2 style="color: #00ff90;">Imágenes:</h2>
+            <p>Se ha utilizado los 3 tipos principales de imágenes: PNG, JPG y GIF.
+              Tiene un carusel para navegar entre las imágenes, y un botón para mostrar la información específica sobre ese formato.
+            </p>
+          </div>
+
+          <div class="socials">
+            <i class="fa-brands fa-github"></i>
+            <i class="fa-brands fa-square-x-twitter"></i>
+            <i class="fa-brands fa-linkedin"></i>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="main.js"></script>
+  </body>
+</html>
